@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.relative {
+  position: relative;
+top:10px;
+  width: 500px;
+  height: 300px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 300px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h2>Difference between Relative And Absolute</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+<div class="relative">The element creates its own coordinate axes
+  <div class="absolute">An element searches for the nearest available coordinate axes among its parent elements. The element is then positioned by specifying offsets from this coordinate axis. It is removed from document normal flow.</div>
+</div>
+
+</body>
+</html>

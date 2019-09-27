@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8" />
+     <title>Form Layout</title>
+   <style>
+		body{
+	background-color: lightblue;
+	}
+	div.a:after{
+	width: 40%;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: pink;
+        content: "";
+        display: table;
+  	clear: both;
+	}
+.firstcolumn{
+float:left;
+width:10%;
+padding:1px;
+height:25px;
+}
+.secondcolumn{
+float:left;
+right:20px;
+width:40%;
+padding:1px;
+height:25px;
+}
+	input[type=text] {
+  	width: 25%;
+  	border: 2px;
+  	border-radius: 4px;
+  	font-size: 16px;
+  	background-color: #E6E6FA;
+	}
+	input[type=email] {
+	  width: 25%;
+          right:30px;
+	  border: 2px;
+ 	 border-radius: 4px;
+  	font-size: 16px;
+  	background-color: #E6E6FA;
+
+	}
+	input[type=password] {
+ 	 width: 25%;
+ 	 border: 2px;
+ 	 border-radius: 4px;
+ 	 font-size: 16px;
+ 	 background-color: #E6E6FA;
+	}
+	input[type=submit] {
+	  width: 10%;
+  	border: 2px;
+  	border-radius: 4px;
+  	font-size: 16px;
+  	background-color: olive;
+	}
+	input[type=reset] {
+ 	 width: 10%;
+ 	 border: 2px;
+ 	 border-radius: 4px;
+ 	 font-size: 16px;
+  	background-color: olive;
+	}
+	h1{
+	text-align:center;
+	}
+
+
+	
+      </style>
+    </head>
+<body>
+<h1>REGISTRATION FORM</h1>
+  <form id="form1">
+<div class="a">
+   <div class="firstcolumn"><label>First Name: </label></div>
+	<div class="secondcolumn"><input id="fname" type="text" name="First Name" placeholder="Your First Name.."/></div>
+</div>
+<div class="a">
+	<div><label class="firstcolumn">Last Name: </label></div>
+	<div class="secondcolumn"><input id="lname" type="text" name="Last Name" placeholder="Your Last Name.."/></div>
+</div>
+<div class="a">
+	<div><label class="firstcolumn">Email: </label></div>
+	<div class="secondcolumn"><input id="email" type="email" name="email" placeholder="Your Email.."/></div>
+</div>
+<div class="a">
+	<div><labe class="firstcolumn"l>Password: </label></div>
+	<div class="secondcolumn"><input id="passwd" type="password" name="password" placeholder="Your password.."/></div>
+</div>
+
+
+	
+   </form>
+<div><input type="submit"  onclick="myFunction()"  value="submit">
+	<input type="reset" name="reset" /></div>
+	 <p><span id="display"></span></p>
+<p><span id="display1"></span></p>
+<p><span id="display2"></span></p>
+<script>
+function myFunction() {
+  document.getElementById("display").innerHTML="First name: "+document.getElementById("fname").value;
+document.getElementById("display1").innerHTML="Last name: "+document.getElementById("lname").value;
+document.getElementById("display2").innerHTML="Email: "+document.getElementById("email").value;
+}
+</script>
+
+</body>
+</html>

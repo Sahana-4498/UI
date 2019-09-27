@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8" />
+     <title>Table Layout</title>
+<style>
+table,tr,th,td{
+table-layout: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+border:2px solid red;
+}
+h1{
+text-align:center;
+}
+body
+{
+background-color:khaki;
+}
+</style>
+  </head>
+<body>
+<h1>TABLE</h1>
+   <table class="a" border="2">
+	<script language="javascript" type="text/javascript">
+		var obj=[{"name":"Sahana", "age":21},{"name":"Sagar", "age":23},{"name":"Mamatha", "age":40},{"name":"Moganna", "age":60}];
+        document.write("<tr><th>Name</th><th>Age</th></tr>");
+	for(var i=0;i<obj.length;i++){
+	document.write("<tr><td>"+obj[i].name+"</td><td>"+obj[i].age+"</td></tr>");
+	}   
+	</script>
+</table>
+</body>
+</html>

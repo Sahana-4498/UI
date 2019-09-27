@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+   var name="Hi,"
+  document.getElementById("demo").innerHTML +=name+ "Sahana";
+}
+function myFunction1() {
+	event.stopPropagation();
+	var name1="Hi,"
+	document.getElementById("demo1").innerHTML +=name1+ "Mamatha";
+}
+</script>
+</head>
+<body>
+<div id="demo" onclick="myFunction()">First Div
+<div id="demo1" onclick="myFunction1()">Second Div</div>
+</div>
+</body>
+</html>

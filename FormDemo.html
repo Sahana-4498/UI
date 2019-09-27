@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8" />
+     <title>Form Layout</title>
+   <style>
+		body{
+	background-color: lightblue;
+	}
+	table{
+	margin-left:auto;
+	margin-right:auto;
+	background-color: pink;
+	}
+	input[type=text] {
+  	width: 100%;
+  	box-sizing: border-box;
+  	border: 2px;
+  	border-radius: 4px;
+  	font-size: 16px;
+  	background-color: #E6E6FA;
+	}
+	input[type=email] {
+	  width: 100%;
+	  box-sizing: border-box;
+	  border: 2px;
+ 	 border-radius: 4px;
+  	font-size: 16px;
+  	background-color: #E6E6FA;
+	}
+	input[type=password] {
+ 	 width: 100%;
+	  box-sizing: border-box;
+ 	 border: 2px;
+ 	 border-radius: 4px;
+ 	 font-size: 16px;
+ 	 background-color: #E6E6FA;
+	}
+	input[type=submit] {
+	  width: 100%;
+	  box-sizing: border-box;
+  	border: 2px;
+  	border-radius: 4px;
+  	font-size: 16px;
+  	background-color: olive;
+	}
+	input[type=reset] {
+ 	 width: 100%;
+  	box-sizing: border-box;
+ 	 border: 2px;
+ 	 border-radius: 4px;
+ 	 font-size: 16px;
+  	background-color: olive;
+	}
+	h1{
+	text-align:center;
+	}
+      </style>
+    </head>
+<body>
+<h1>FORM</h1>
+  <form id="form1">
+    <table>
+	<tr>
+	<td><label>First Name: </label></td>
+	<td><input id="fname" type="text" name="First Name" placeholder="Your First Name.."/></td>
+	</tr>
+	<tr>
+	<td><label>Last Name: </label></td>
+	<td><input id="lname" type="text" name="last Name" placeholder="Your Last Name.."></input></td>
+	</tr>
+	<tr>
+	<td><label>Email: </label></td>
+	<td><input id="email" type="email" name="email" placeholder="Your Email.."></input></td>
+	</tr>
+	<tr>
+	<td><label>Password: </label></td>
+	<td><input  id="passwd" type="password" name="password" placeholder="Your password.."></input></td>
+	</tr>
+	<tr>
+	<td><input type="submit" onclick="myFunction()"  name="submit" value="submit">
+	<input type="reset" name="reset" ></input></td>
+	</tr>
+     </table>
+   </form>
+<script>
+function myFunction() {
+  document.getElementById("form1").submit();
+document.write(fname.value,"<br>",lname.value,"<br>",email.value,"<br>",passwd.value);
+}
+</script>
+</body>
+</html>

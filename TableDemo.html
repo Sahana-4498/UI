@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8" />
+     <title>Table Layout</title>
+   <style>
+	table, tr, th, td{
+ 	table-layout: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+border:2px solid red;
+	}
+	h1{
+	text-align: center;
+	}
+	tr.a{
+	background-color:pink;
+	color:blue;
+	}
+	tr.b{
+	background-color:lightblue;
+ 	color:blue;
+	}
+     </style>
+  </head>
+<body>
+  <h1>TABLE</h1>
+    <br/>
+     <table id="myTable">
+	<tr  class="a">
+	<th>Name</th>
+	<th>Email</th>
+	<th>Age</th>
+	</tr>
+	<tr class="b" >
+	<td>Sahana</td>
+	<td>Sahana@gmail.com</td>
+	<td>21</td>
+	</tr>
+	<tr class="b">
+	<td>Mamatha</td>
+	<td>Mamatha@gmail.com</td>
+	<td>40</td>
+	</tr>
+	<tr class="b">
+	<td>Sagar</td>
+	<td>Sagar@gmail.com</td>
+	<td>23</td>
+	</tr>
+	<tr class="b">
+	<td>Moganna</td>
+	<td>Moganna@gmail.com</td>
+	<td>60</td>
+	</tr>
+    </table>
+<p id="name" onclick="myFunction()">Display</p>
+<script>
+function myFunction(){
+var name=document.getElementById("myTable").rows[0];
+document.getElementById("name").innerHTML=name;
+}
+</script>
+</body>
+</html>

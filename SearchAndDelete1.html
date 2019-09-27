@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div id="a"></div>
+<p>Enter a number: <input type="number" id="findNum" value="2"></p>
+<button onclick="myFunction()">FIND</button>
+<p>Value: <span id="demo"></span></p>
+<script>
+function myFunction(){
+var arr=[1,2,3,4,5,6];
+var f=document.getElementById("findNum").value;
+alert(f);
+document.getElementById("demo").innerHTML = arr.filter(e => e !== f);
+}
+</script>
+
+</body>
+</html>
